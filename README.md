@@ -1,2 +1,2 @@
-# 04 - Space-Shooter
- space shooter but you get a pirate ship instead
+# Project-Template-Godot
+A default Godot project template for MSCH-C220
