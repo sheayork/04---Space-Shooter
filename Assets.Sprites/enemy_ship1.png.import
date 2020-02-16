@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/merchant ship 2.png-33ce6b363116d11e822839aae8cda1d8.stex"
+path="res://.import/enemy_ship1.png-9ddf761550c899a9a9fa7b8ad9f975df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets.Sprites/merchant ship 2.png"
-dest_files=[ "res://.import/merchant ship 2.png-33ce6b363116d11e822839aae8cda1d8.stex" ]
+source_file="res://Assets.Sprites/enemy_ship1.png"
+dest_files=[ "res://.import/enemy_ship1.png-9ddf761550c899a9a9fa7b8ad9f975df.stex" ]
 
 [params]
 

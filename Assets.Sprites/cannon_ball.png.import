@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/navy.png-98177bcfd7a27da6a721d9ca46832fed.stex"
+path="res://.import/cannon_ball.png-8dfd744c9e59b87ec2383ff39effe122.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets.Sprites/navy.png"
-dest_files=[ "res://.import/navy.png-98177bcfd7a27da6a721d9ca46832fed.stex" ]
+source_file="res://Assets.Sprites/cannon_ball.png"
+dest_files=[ "res://.import/cannon_ball.png-8dfd744c9e59b87ec2383ff39effe122.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ocean_SpriteSheet.png-87f97612504dc3b2c9db1b768b2e03db.stex"
+path="res://.import/enemy_ship2.png-15d75821be22744305c4a079bc375104.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets.Sprites/Ocean_SpriteSheet.png"
-dest_files=[ "res://.import/Ocean_SpriteSheet.png-87f97612504dc3b2c9db1b768b2e03db.stex" ]
+source_file="res://Assets.Sprites/enemy_ship2.png"
+dest_files=[ "res://.import/enemy_ship2.png-15d75821be22744305c4a079bc375104.stex" ]
 
 [params]
 

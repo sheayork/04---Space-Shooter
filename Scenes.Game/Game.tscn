@@ -1,0 +1,94 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets.Sprites/Ocean_SpriteSheet_BG.png" type="Texture" id=1]
+[ext_resource path="res://Assets.Sprites/pirate2.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=3]
+[ext_resource path="res://Assets.Sprites/enemy_ship1.png" type="Texture" id=4]
+[ext_resource path="res://Assets.Sprites/cannon_ball.png" type="Texture" id=5]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" type="KinematicBody2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+position = Vector2( 537, 514 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
+position = Vector2( 537, 514 )
+scale = Vector2( 2, 2 )
+polygon = PoolVector2Array( 12, -33.5, 12, -31, 16, -23, 16, 37.5, -16, 37.5, -16, -22.2, -11.4, -34.5, -9.8, -34.5, -7, -37.3, 7, -37.5 )
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Background"]
+position = Vector2( 513, 297 )
+scale = Vector2( 4.01563, 9.375 )
+texture = ExtResource( 1 )
+
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet_R" type="RigidBody2D" parent="Bullets"]
+collision_layer = 2
+collision_mask = 12
+mode = 2
+gravity_scale = 0.0
+
+[node name="Sprite" type="Sprite" parent="Bullets/Bullet_R"]
+position = Vector2( 368, -24 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bullets/Bullet_R"]
+position = Vector2( 368, -24 )
+scale = Vector2( 0.1, 0.1 )
+polygon = PoolVector2Array( 17, -126.8, 38, -123.7, 38, -122.4, 65, -112.4, 65, -111.1, 89, -95.1, 89, -93.8, 109, -72.8, 109, -70.5, 123, -47.6, 123, -44.4, 130, -25.4, 130, -20, 133.3, 5, 131.8, 5, 128.8, 37, 127.4, 37, 113.4, 72, 112.1, 72, 103.1, 86, 101.8, 86, 82.9, 106, 80.6, 106, 52.6, 124, 49.3, 124, 20.3, 133, -19, 133, -19, 131.5, -53, 122.5, -53, 121.1, -82, 104.1, -82, 102.8, -107, 76.8, -107, 74.5, -116, 61.6, -116, 59.4, -124, 41.4, -124, 37, -129, 17.2, -129, -11.2, -124.7, -34, -123.5, -34, -118.5, -51, -117.2, -51, -107.2, -71, -105.9, -71, -84.9, -96, -82.8, -96, -74.8, -104, -72.6, -104, -50.6, -118, -47.3, -118, -33.4, -124, -29.3, -124, -14, -126.7, -14, -128, 17, -128 )
+
+[node name="Enemy Canon Balls" type="Node2D" parent="."]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy Ship" type="KinematicBody2D" parent="Enemies"]
+
+[node name="Sprite" type="Sprite" parent="Enemies/Enemy Ship"]
+position = Vector2( 0, -100 )
+rotation = 3.14159
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Enemies/Enemy Ship"]
+position = Vector2( 0, -100 )
+rotation = -3.14159
+scale = Vector2( 2, 2 )
+polygon = PoolVector2Array( 12, -33.5, 12, -31, 16, -23, 16, 37.5, -16, 37.5, -16, -22.2, -11.4, -34.5, -9.8, -34.5, -7, -37.3, 7, -37.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HUD" type="Node2D" parent="."]
+
+[node name="Health" type="Label" parent="HUD"]
+margin_left = 2.0
+margin_right = 144.0
+margin_bottom = 56.0
+text = "Health: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="HUD"]
+margin_left = 895.0
+margin_right = 1017.0
+margin_bottom = 58.0
+text = "Score: "
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cannon ball.png-7051f31ed1dae881e613c0ff36310a52.stex"
+path="res://.import/Ocean_SpriteSheet_BG.png-7dc0a646283074449fd782535823af68.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets.Sprites/cannon ball.png"
-dest_files=[ "res://.import/cannon ball.png-7051f31ed1dae881e613c0ff36310a52.stex" ]
+source_file="res://Assets.Sprites/Ocean_SpriteSheet_BG.png"
+dest_files=[ "res://.import/Ocean_SpriteSheet_BG.png-7dc0a646283074449fd782535823af68.stex" ]
 
 [params]
 
